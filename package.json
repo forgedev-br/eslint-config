@@ -1,0 +1,38 @@
+{
+  "name": "@forgedev-br/eslint-config",
+  "version": "1.0.0",
+  "contributors": [
+    "Adeonir Kohl <adeonir@gmail.com> (https://adeonir.dev/)",
+    "Wilson Faustino <wilson.rfaustino@gmail.com> (http://example.com/~contributortwo)"
+  ],
+  "description": "ESLint configuration used by ForgeDev BR",
+  "main": "index.js",
+  "private": false,
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "lint",
+    "prettier",
+    "format",
+    "javascript",
+    "typescript",
+    "vite",
+    "node",
+    "react",
+    "nextjs",
+    "tailwindcss"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "eslint": "^8",
+    "prettier": "^3",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  }
+}
