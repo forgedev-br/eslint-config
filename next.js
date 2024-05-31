@@ -1,9 +1,23 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: require.resolve('./index'),
+  extends: [require.resolve('./index'), 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
   env: {
     node: true,
     browser: true,
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  globals: {
+    React: true,
+    JSX: true,
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
   plugins: ['react', 'react-hooks', 'jsx-a11y'],
   rules: {

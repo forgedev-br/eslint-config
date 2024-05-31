@@ -1,8 +1,22 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: require.resolve('./index'),
+  extends: [require.resolve('./index'), 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
   env: {
     browser: true,
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  globals: {
+    React: true,
+    JSX: true,
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
   plugins: ['react-refresh', 'react', 'react-hooks', 'jsx-a11y'],
   rules: {
@@ -21,6 +35,7 @@ module.exports = {
     'react/self-closing-comp': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
   },
   overrides: [
     {

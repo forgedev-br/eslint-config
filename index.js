@@ -4,32 +4,22 @@ module.exports = {
   extends: [
     'standard',
     'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
     'plugin:import/recommended',
+    'prettier',
   ],
   env: {
     es2022: true,
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
   settings: {
-    react: {
-      version: 'detect',
-    },
-    node: {
-      extensions: ['cjs', '.mjs', '.js', '.jsx', '.ts', '.tsx'],
-    },
+    node: {},
   },
-  plugins: ['unicorn', 'import', 'simple-import-sort', 'prettier', '@typescript-eslint'],
+  plugins: ['unicorn', 'import', 'simple-import-sort', 'prettier'],
   rules: {
     'prettier/prettier': [
       'error',
