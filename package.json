@@ -9,9 +9,9 @@
   "private": true,
   "license": "MIT",
   "files": [
-    "next.js",
-    "node.js",
-    "vite.js"
+    "./next.js",
+    "./node.js",
+    "./vite.js"
   ],
   "keywords": [
     "eslint",
