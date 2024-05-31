@@ -8,7 +8,6 @@
   "description": "ESLint configuration used by ForgeDev BR",
   "private": true,
   "license": "MIT",
-  "main": "index.js",
   "files": [
     "next.js",
     "node.js",
