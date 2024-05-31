@@ -1,0 +1,40 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
+  "extends": ["./base.json"],
+	"organizeImports": { "enabled": true },
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": false,
+			"a11y": {
+				"noAriaUnsupportedElements": "warn",
+				"noBlankTarget": "error",
+				"useAltText": "warn",
+				"useAriaPropsForRole": "warn",
+				"useButtonType": "warn",
+				"useValidAriaProps": "warn",
+				"useValidAriaValues": "warn"
+			},
+			"correctness": {
+				"noChildrenProp": "error",
+				"useExhaustiveDependencies": "warn",
+				"useHookAtTopLevel": "error",
+				"useJsxKeyInIterable": "error"
+			},
+			"security": { "noDangerouslySetInnerHtml": "error" },
+			"suspicious": { "noCommentText": "error", "noDuplicateJsxProps": "error" }
+		}
+	},
+	"javascript": { "globals": ["React", "JSX"] },
+	"overrides": [
+		{
+			"include": [
+				"src/app/**/{layout,loading,page,route}.tsx",
+				"src/**/*.stories.{ts,tsx}",
+				"tailwind.config.{js,ts,cjs}",
+				"postcss.config.{js,ts,cjs}"
+			],
+			"linter": { "rules": { "style": { "noDefaultExport": "off" } } }
+		}
+	]
+}
