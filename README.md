@@ -54,19 +54,3 @@ Inside `.eslintrc.js`
   extends: '@forgedev-br/eslint-config/vite'
 }
 ```
-
-#### Using TailwindCSS
-
-If you are using TailwindCSS, you need to pass the config file to the prettier configuration:
-```
-rules: {
-  'prettier/prettier': [
-    'error',
-    {
-      tailwindConfig: '<tailwind config file>',
-    },
-  ],
-}
-```
-
-Where `<tailwind config file>` is your `tailwind.config.js` or `tailwind.config.ts` file.
