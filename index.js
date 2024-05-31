@@ -113,4 +113,12 @@ module.exports = {
     'unicorn/filename-case': ['error', { case: 'kebabCase' }],
     'unicorn/prefer-node-protocol': 'warn',
   },
+  overrides: [
+    {
+      files: ['tailwind.config.{js,ts,cjs}', 'postcss.config.{js,ts,cjs}'],
+      rules: {
+        'import/no-default-export': 'off',
+      },
+    },
+  ],
 }

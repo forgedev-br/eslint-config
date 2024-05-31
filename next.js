@@ -25,7 +25,13 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['src/app/**/*', 'src/**/*.stories.tsx'],
+      files: [
+        'src/app/**/page.tsx',
+        'src/app/**/route.ts',
+        'src/**/*.stories.{ts,tsx}',
+        'tailwind.config.{js,ts,cjs}',
+        'postcss.config.{js,ts,cjs}',
+      ],
       rules: {
         'import/no-default-export': 'off',
       },
