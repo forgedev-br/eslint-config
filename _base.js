@@ -44,6 +44,8 @@ module.exports = {
         arrowParens: 'always',
         trailingComma: 'es5',
         endOfLine: 'auto',
+        tailwindFunctions: ['tv', 'cn', 'cva'],
+        plugins: ['prettier-plugin-tailwindcss'],
       },
     ],
     '@typescript-eslint/consistent-type-imports': [

@@ -1,6 +1,6 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: [require.resolve('./_base'), 'next/core-web-vitals', 'next'],
+  extends: require.resolve('./_base'),
   env: {
     node: true,
     browser: true,
