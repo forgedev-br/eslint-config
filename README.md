@@ -1,56 +1,76 @@
-# ESLint configuration used by ForgeDev BR
+# Code Formatting and Linting Configuration used by ForgeDev BR
 
-## Whats included?
+## What"s included?
 
-- Standard config base;
-- React plugin;
-- React Hooks plugin;
-- JSX a11y plugin;
-- Prettier;
+- [Biome](https://biomejs.dev/) for code formatting and linting;
 
 ## Setup
 
-### Node.js
+### Any Project
 
 Install dependencies:
-```
-npm i -D eslint @forgedev-br/eslint-config
+```bash
+npm i -D @biomejs/biome
 ```
 
-Inside `.eslintrc.json`
+Configure your project:
+```bash
+npx @biomejs/biome init
 ```
-{
-  extends: '@forgedev-br/eslint-config/node'
+
+Add a script to package.json:
+```json
+"scripts": {
+  // other scripts
+  "link": "npx @biomejs/biome check --apply ./src"
 }
 ```
 
-### React (with Next.js)
+---
+
+#### Node.js
 
 Install dependencies:
-```
-npm i -D eslint @forgedev-br/eslint-config
+```bash
+npm i -D @forgedev-br/biome-config
 ```
 
-Inside `.eslintrc.js`
+Configure your project:
+```bash
+npx @biomejs/biome init
 ```
+
+Inside `biome.json` file
+```json
 {
-  extends: [
-    '@forgedev-br/eslint-config/next',
-    'next/core-web-vitals'
-  ]
+  "extends": ["@forgedev-br/biome-config/node"]
 }
 ```
 
-### React (with Vite)
+#### React (with Next.js)
 
 Install dependencies:
-```
-npm i -D eslint @forgedev-br/eslint-config
+```bash
+npm i -D @forgedev-br/biome-config
 ```
 
-Inside `.eslintrc.js`
-```
+Inside `biome.json` file
+```json
 {
-  extends: '@forgedev-br/eslint-config/vite'
+  "extends": ["@forgedev-br/biome-config/next"]
+}
+```
+
+#### React (with Vite)
+
+Install dependencies:
+```bash
+npm i -D @forgedev-br/biome-config
+```
+
+Inside `biome.json` file
+```json
+{
+  "extends": ["@forgedev-br/biome-config/vite"]
 }
 ```
