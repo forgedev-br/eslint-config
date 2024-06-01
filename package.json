@@ -6,7 +6,10 @@
     "Wilson Faustino <wilson.rfaustino@gmail.com>"
   ],
   "description": "ESLint configuration used by ForgeDev BR",
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "exports": [
     "./index.js",

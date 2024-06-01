@@ -12,7 +12,7 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Setup Node.js 20.x
@@ -20,10 +20,10 @@ jobs:
         with:
           node-version: 20.x
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Create Release Pull Request or Publish to npm
+      - name: Create release and publish to npm
         id: changesets
         uses: changesets/action@v1
         with:
