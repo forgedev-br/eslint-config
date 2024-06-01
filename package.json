@@ -7,12 +7,12 @@
   ],
   "description": "ESLint configuration used by ForgeDev BR",
   "private": true,
-  "license": "MIT",
-  "files": [
-    "index.js",
-    "next.js",
-    "node.js",
-    "vite.js"
+  "type": "module",
+  "exports": [
+    "./index.js",
+    "./next.js",
+    "./node.js",
+    "./vite.js"
   ],
   "keywords": [
     "eslint",
