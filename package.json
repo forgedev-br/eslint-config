@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "contributors": [
     "Adeonir Kohl <adeonir@gmail.com> (https://adeonir.dev/)",
-    "Wilson Faustino <wilson.rfaustino@gmail.com> (http://example.com/~contributortwo)"
+    "Wilson Faustino <wilson.rfaustino@gmail.com>"
   ],
   "description": "ESLint configuration used by ForgeDev BR",
   "private": true,
@@ -29,7 +29,10 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "changeset": "changeset",
+    "release": "changeset version",
+    "publish": "changeset publish"
   },
   "peerDependencies": {
     "eslint": "^8",
