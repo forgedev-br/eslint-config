@@ -10,13 +10,12 @@
   "publishConfig": {
     "access": "public"
   },
-  "type": "module",
-  "exports": [
-    "./index.js",
-    "./next.js",
-    "./node.js",
-    "./vite.js"
-  ],
+  "exports": {
+    "./base": "./base.js",
+    "./next": "./next.js",
+    "./node": "./node.js",
+    "./vite": "./vite.js"
+  },
   "keywords": [
     "eslint",
     "lint",
