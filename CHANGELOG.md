@@ -1,5 +1,11 @@
 # @forgedev-br/eslint-config
 
+## 1.2.0
+
+### Minor Changes
+
+- 7b640be: Replace husky and lint-staged with lefthook and fix some readme instructions
+
 ## 1.1.1
 
 ### Patch Changes
