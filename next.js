@@ -1,6 +1,6 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: [require.resolve('./index'), 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
+  extends: [require.resolve('./base'), 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
   env: {
     node: true,
     browser: true,
