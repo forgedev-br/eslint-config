@@ -14,7 +14,7 @@
 
 Install dependencies:
 ```
-npm i -D eslint @forgedev-br/eslint-config
+npm i -D @forgedev-br/eslint-config
 ```
 
 Inside `.eslintrc.json`
@@ -28,7 +28,7 @@ Inside `.eslintrc.json`
 
 Install dependencies:
 ```
-npm i -D eslint @forgedev-br/eslint-config
+npm i -D @forgedev-br/eslint-config
 ```
 
 Inside `.eslintrc.js`
@@ -45,7 +45,7 @@ Inside `.eslintrc.js`
 
 Install dependencies:
 ```
-npm i -D eslint @forgedev-br/eslint-config
+npm i -D @forgedev-br/eslint-config
 ```
 
 Inside `.eslintrc.js`

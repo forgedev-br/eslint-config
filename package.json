@@ -31,11 +31,10 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "prepare": "husky",
-    "pre-commit": "echo 'Pre-commit hook'",
     "changeset": "changeset",
     "release": "changeset version",
-    "publish": "changeset publish"
+    "publish": "changeset publish",
+    "prepare": "lefthook install"
   },
   "peerDependencies": {
     "eslint": "^8",
@@ -44,7 +43,8 @@
     "standard": "^17"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.5"
+    "@changesets/cli": "^2.27.5",
+    "lefthook": "^1.6.14"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.11.0",
@@ -63,20 +63,10 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "eslint-plugin-simple-import-sort": "^12.1.0",
     "eslint-plugin-unicorn": "^53.0.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.5",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.6.0"
   },
   "engines": {
     "node": ">=20"
-  },
-  "lint-staged": {
-    "*.js": "eslint --fix"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
