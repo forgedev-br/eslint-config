@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Create release and publish to npm
+      - name: Create release pull request or publish to npm
         id: changesets
         uses: changesets/action@v1
         with:
