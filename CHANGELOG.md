@@ -1,5 +1,11 @@
 # @forgedev-br/eslint-config
 
+## 1.2.1
+
+### Patch Changes
+
+- 522ad13: Add missing eslint package on install command
+
 ## 1.2.0
 
 ### Minor Changes
