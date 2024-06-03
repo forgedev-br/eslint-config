@@ -10,12 +10,13 @@
 
 ## Setup
 
-### Node.js
-
 Install dependencies:
 ```
-npm i -D @forgedev-br/eslint-config
+npm i -D eslint@8.57.0 @forgedev-br/eslint-config
 ```
+> This package works with eslint v8
+
+### Node.js
 
 Inside `.eslintrc.json`
 ```
@@ -25,11 +26,6 @@ Inside `.eslintrc.json`
 ```
 
 ### React (with Next.js)
-
-Install dependencies:
-```
-npm i -D @forgedev-br/eslint-config
-```
 
 Inside `.eslintrc.js`
 ```
@@ -42,11 +38,6 @@ Inside `.eslintrc.js`
 ```
 
 ### React (with Vite)
-
-Install dependencies:
-```
-npm i -D @forgedev-br/eslint-config
-```
 
 Inside `.eslintrc.js`
 ```
