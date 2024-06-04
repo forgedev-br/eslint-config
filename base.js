@@ -70,17 +70,7 @@ module.exports = {
     'import/no-duplicates': 'error',
     'import/no-extraneous-dependencies': 'off',
     'import/no-unresolved': 'off',
-    'import/order': [
-      'error',
-      {
-        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-        'newlines-between': 'always',
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
-      },
-    ],
+    'import/order': 'off',
     'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
     'no-var': 'error',
     'padding-line-between-statements': [
