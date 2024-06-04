@@ -1,5 +1,11 @@
 # @forgedev-br/eslint-config
 
+## 1.2.2
+
+### Patch Changes
+
+- 5e562eb: Fix simple-sort-import rules and add packages to README
+
 ## 1.2.1
 
 ### Patch Changes
