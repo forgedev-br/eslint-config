@@ -7,6 +7,8 @@
 - React Hooks plugin;
 - JSX a11y plugin;
 - Prettier;
+- Eslint;
+- Simple-sort-import;
 
 ## Setup
 
