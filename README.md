@@ -13,36 +13,36 @@
 ## Setup
 
 Install dependencies:
+```sh
+pnpm install -D eslint@8.57.0 @forgedev-br/eslint-config
 ```
-npm i -D eslint@8.57.0 @forgedev-br/eslint-config
-```
-> This package works with eslint v8
+> This package does not work with eslint 9.x.x
 
 ### Node.js
 
 Inside `.eslintrc.json`
-```
+```sh
 {
   extends: '@forgedev-br/eslint-config/node'
 }
 ```
 
-### React (with Next.js)
+### Next.js
 
 Inside `.eslintrc.js`
-```
+```sh
 {
   extends: [
-    '@forgedev-br/eslint-config/next',
-    'next/core-web-vitals'
+    'next/core-web-vitals',
+    '@forgedev-br/eslint-config/next'
   ]
 }
 ```
 
-### React (with Vite)
+### Vite (with React)
 
 Inside `.eslintrc.js`
-```
+```sh
 {
   extends: '@forgedev-br/eslint-config/vite'
 }

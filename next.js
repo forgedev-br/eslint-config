@@ -28,8 +28,12 @@ module.exports = {
     'jsx-a11y/role-has-required-aria-props': 'warn',
     'jsx-a11y/role-supports-aria-props': 'warn',
     'react/button-has-type': 'warn',
-    'react/function-component-definition': ['warn', { namedComponents: 'arrow-function' }],
+    'react/hook-use-state': 'warn',
+    'react/jsx-boolean-value': 'warn',
+    'react/jsx-fragments': 'warn',
+    'react/jsx-no-useless-fragment': ['warn', { allowExpressions: true }],
     'react/jsx-pascal-case': 'warn',
+    'react/jsx-sort-props': 'warn',
     'react/no-unknown-property': 'error',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
@@ -39,12 +43,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: [
-        'src/app/**/{layout,loading,page,route}.tsx',
-        'src/**/*.stories.{ts,tsx}',
-        'tailwind.config.{js,ts,cjs}',
-        'postcss.config.{js,ts,cjs}',
-      ],
+      files: ['src/**/{default,error,layout,loading,middleware,not-found,page,route}.{ts,tsx}'],
       rules: {
         'import/no-default-export': 'off',
         'react/function-component-definition': 'off',
