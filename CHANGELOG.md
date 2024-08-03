@@ -1,5 +1,11 @@
 # @forgedev-br/eslint-config
 
+## 1.3.0
+
+### Minor Changes
+
+- Update rules and publish workflow
+
 ## 1.2.2
 
 ### Patch Changes
