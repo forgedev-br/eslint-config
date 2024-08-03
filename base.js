@@ -6,6 +6,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
+    'plugin:import/typescript',
     'prettier',
   ],
   env: {
@@ -17,7 +18,12 @@ module.exports = {
     sourceType: 'module',
   },
   settings: {
-    node: {},
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    'import/parsers': { '@typescript-eslint/parser': ['.ts', '.tsx'] },
+    'import/resolver': {
+      typescript: true,
+      node: true,
+    },
   },
   plugins: ['unicorn', 'import', 'simple-import-sort', 'prettier'],
   rules: {
@@ -32,7 +38,7 @@ module.exports = {
         singleQuote: true,
         jsxSingleQuote: false,
         arrowParens: 'always',
-        trailingComma: 'es5',
+        trailingComma: 'all',
         endOfLine: 'auto',
         tailwindFunctions: ['tv', 'cn', 'cva'],
         plugins: ['prettier-plugin-tailwindcss'],
@@ -62,17 +68,22 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-explicit-any': 'error',
+    'default-case-last': 'error',
     'import/default': 'off',
+    'import/export': 'off',
+    'import/first': 'error',
     'import/namespace': 'off',
     'import/newline-after-import': 'error',
     'import/no-absolute-path': 'error',
     'import/no-default-export': 'error',
-    'import/no-duplicates': 'error',
+    'import/no-duplicates': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/no-unresolved': 'off',
     'import/order': 'off',
-    'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
+    'no-console': ['warn', { allow: ['info', 'warn', 'error'] }],
+    'no-else-return': 'warn',
     'no-var': 'error',
+    'object-shorthand': 'warn',
     'padding-line-between-statements': [
       'error',
       { blankLine: 'always', prev: 'if', next: '*' },
@@ -93,9 +104,10 @@ module.exports = {
     'unicorn/filename-case': ['error', { case: 'kebabCase' }],
     'unicorn/prefer-node-protocol': 'warn',
   },
+  ignorePatterns: ['.*.js', 'node_modules/'],
   overrides: [
     {
-      files: ['tailwind.config.{js,ts,cjs}', 'postcss.config.{js,ts,cjs}'],
+      files: ['tailwind.config.{js,ts,cjs,mjs}', 'postcss.config.{js,ts,cjs,mjs}'],
       rules: {
         'import/no-default-export': 'off',
       },
