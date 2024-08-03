@@ -39,7 +39,7 @@
     "lint": "eslint .",
     "prepare": "lefthook install",
     "changeset": "changeset",
-    "release": "changeset version"
+    "version": "changeset version"
   },
   "peerDependencies": {
     "eslint": "^8",
