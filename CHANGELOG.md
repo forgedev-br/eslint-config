@@ -1,5 +1,11 @@
 # @forgedev-br/eslint-config
 
+## 1.3.1
+
+### Patch Changes
+
+- Remove build settings from publish workflow
+
 ## 1.3.0
 
 ### Minor Changes
