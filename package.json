@@ -10,6 +10,12 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "base.js",
+    "next.js",
+    "node.js",
+    "vite.js"
+  ],
   "exports": {
     "./base": "./base.js",
     "./next": "./next.js",
@@ -31,10 +37,9 @@
   ],
   "scripts": {
     "lint": "eslint .",
+    "prepare": "lefthook install",
     "changeset": "changeset",
-    "release": "changeset version",
-    "publish": "changeset publish",
-    "prepare": "lefthook install"
+    "release": "changeset version"
   },
   "peerDependencies": {
     "eslint": "^8",
