@@ -110,6 +110,7 @@ module.exports = {
       files: ['tailwind.config.{js,ts,cjs,mjs}', 'postcss.config.{js,ts,cjs,mjs}'],
       rules: {
         'import/no-default-export': 'off',
+        '@typescript-eslint/no-require-imports': 'off',
       },
     },
   ],
