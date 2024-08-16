@@ -1,5 +1,11 @@
 # @forgedev-br/eslint-config
 
+## 1.3.3
+
+### Patch Changes
+
+- Add override rule to use required in config files.
+
 ## 1.3.2
 
 ### Patch Changes
