@@ -5,22 +5,28 @@
     "Adeonir Kohl <adeonir@gmail.com> (https://adeonir.dev/)",
     "Wilson Faustino <wilson.rfaustino@gmail.com>"
   ],
-  "description": "ESLint configuration used by ForgeDev BR",
+  "description": "ESLint configuration used by ForgeDev BR Team",
   "private": false,
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forgedev-br/eslint-config.git"
   },
   "files": [
     "base.js",
     "next.js",
     "node.js",
-    "vite.js"
+    "vite.js",
+    "vue.js"
   ],
   "exports": {
     "./base": "./base.js",
     "./next": "./next.js",
     "./node": "./node.js",
-    "./vite": "./vite.js"
+    "./vite": "./vite.js",
+    "./vue": "./vue.js"
   },
   "keywords": [
     "eslint",
@@ -33,7 +39,8 @@
     "node",
     "react",
     "nextjs",
-    "tailwindcss"
+    "tailwindcss",
+    "vue"
   ],
   "scripts": {
     "lint": "eslint .",
@@ -44,12 +51,16 @@
   "peerDependencies": {
     "eslint": "^8",
     "prettier": "^3",
-    "typescript": "^5",
-    "standard": "^17"
+    "standard": "^17",
+    "typescript": "^5"
   },
   "dependencies": {
+    "@rushstack/eslint-patch": "^1.10.4",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-standard": "^8.0.1",
+    "@vue/eslint-config-typescript": "^13.0.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.5",
     "eslint-config-prettier": "^9.1.0",
@@ -64,6 +75,7 @@
     "eslint-plugin-react-refresh": "^0.4.9",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unicorn": "^55.0.0",
+    "eslint-plugin-vue": "^9.27.0",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5"
   },
