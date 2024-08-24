@@ -18,14 +18,14 @@
     "base.js",
     "next.js",
     "node.js",
-    "vite.js",
+    "react.js",
     "vue.js"
   ],
   "exports": {
     "./base": "./base.js",
     "./next": "./next.js",
     "./node": "./node.js",
-    "./vite": "./vite.js",
+    "./react": "./react.js",
     "./vue": "./vue.js"
   },
   "keywords": [

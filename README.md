@@ -38,16 +38,16 @@ Inside `.eslintrc.js`
 }
 ```
 
-### Vite (with React)
+### React with Vite
 
 Inside `.eslintrc.js`
 ```sh
 {
-  extends: '@forgedev-br/eslint-config/vite'
+  extends: '@forgedev-br/eslint-config/react'
 }
 ```
 
-### Vite (with Vue)
+### Vue with Vite
 
 Inside `.eslintrc.js`
 ```sh
