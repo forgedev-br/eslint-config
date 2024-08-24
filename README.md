@@ -1,4 +1,4 @@
-# ESLint configuration used by ForgeDev BR Team
+# ESLint configuration used by ForgeDev Team
 
 ## Whats included?
 

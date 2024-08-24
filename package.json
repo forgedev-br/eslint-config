@@ -5,7 +5,7 @@
     "Adeonir Kohl <adeonir@gmail.com> (https://adeonir.dev/)",
     "Wilson Faustino <wilson.rfaustino@gmail.com>"
   ],
-  "description": "ESLint configuration used by ForgeDev BR Team",
+  "description": "ESLint configuration used by ForgeDev Team",
   "private": false,
   "publishConfig": {
     "access": "public"
