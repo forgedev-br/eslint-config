@@ -1,19 +1,12 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
-  extends: [
-    'standard',
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
-    'prettier',
-  ],
+  extends: ['standard', 'eslint:recommended', 'plugin:import/recommended', 'plugin:import/typescript', 'prettier'],
   env: {
     es2022: true,
   },
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    parser: '@typescript-eslint/parser',
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
@@ -44,30 +37,6 @@ module.exports = {
         plugins: ['prettier-plugin-tailwindcss'],
       },
     ],
-    '@typescript-eslint/consistent-type-imports': [
-      'warn',
-      {
-        disallowTypeAnnotations: true,
-        fixStyle: 'separate-type-imports',
-        prefer: 'type-imports',
-      },
-    ],
-    '@typescript-eslint/naming-convention': [
-      'error',
-      {
-        format: ['PascalCase'],
-        selector: ['typeLike', 'enumMember'],
-      },
-      {
-        custom: {
-          match: false,
-          regex: '^I[A-Z]|^(Interface|Props|State)$',
-        },
-        format: ['PascalCase'],
-        selector: 'interface',
-      },
-    ],
-    '@typescript-eslint/no-explicit-any': 'error',
     'default-case-last': 'error',
     'import/default': 'off',
     'import/export': 'off',
@@ -105,13 +74,4 @@ module.exports = {
     'unicorn/prefer-node-protocol': 'warn',
   },
   ignorePatterns: ['.*.js', 'node_modules/'],
-  overrides: [
-    {
-      files: ['tailwind.config.{js,ts,cjs,mjs}', 'postcss.config.{js,ts,cjs,mjs}'],
-      rules: {
-        'import/no-default-export': 'off',
-        '@typescript-eslint/no-require-imports': 'off',
-      },
-    },
-  ],
 }

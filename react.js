@@ -1,6 +1,11 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: [require.resolve('./base'), 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
+  extends: [
+    require.resolve('./base'),
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+  ],
   env: {
     browser: true,
   },
@@ -20,6 +25,30 @@ module.exports = {
   },
   plugins: ['react-refresh', 'react', 'react-hooks', 'jsx-a11y'],
   rules: {
+    '@typescript-eslint/consistent-type-imports': [
+      'warn',
+      {
+        disallowTypeAnnotations: true,
+        fixStyle: 'separate-type-imports',
+        prefer: 'type-imports',
+      },
+    ],
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        format: ['PascalCase'],
+        selector: ['typeLike', 'enumMember'],
+      },
+      {
+        custom: {
+          match: false,
+          regex: '^I[A-Z]|^(Interface|Props|State)$',
+        },
+        format: ['PascalCase'],
+        selector: 'interface',
+      },
+    ],
+    '@typescript-eslint/no-explicit-any': 'error',
     'jsx-a11y/alt-text': ['warn', { elements: ['img'] }],
     'jsx-a11y/aria-props': 'warn',
     'jsx-a11y/aria-proptypes': 'warn',
@@ -51,6 +80,7 @@ module.exports = {
       ],
       rules: {
         'import/no-default-export': 'off',
+        '@typescript-eslint/no-require-imports': 'off',
       },
     },
   ],
