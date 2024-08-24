@@ -1,10 +1,16 @@
 # @forgedev-br/eslint-config
 
+## 1.4.0
+
+### Minor Changes
+
+- Add vue config
+
 ## 1.3.3
 
 ### Patch Changes
 
-- Add override rule to use required in config files.
+- Add override rule to use required in config files
 
 ## 1.3.2
 
@@ -28,25 +34,25 @@
 
 ### Patch Changes
 
-- 5e562eb: Fix simple-sort-import rules and add packages to README
+- Fix simple-sort-import rules and add packages to README
 
 ## 1.2.1
 
 ### Patch Changes
 
-- 522ad13: Add missing eslint package on install command
+- Add missing eslint package on install command
 
 ## 1.2.0
 
 ### Minor Changes
 
-- 7b640be: Replace husky and lint-staged with lefthook and fix some readme instructions
+- Replace husky and lint-staged with lefthook and fix some readme instructions
 
 ## 1.1.1
 
 ### Patch Changes
 
-- 1006464: Remove type module and update exports
+- Remove type module and update exports
 
 ## 1.1.0
 
