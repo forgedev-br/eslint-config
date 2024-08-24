@@ -1,5 +1,11 @@
 # @forgedev-br/eslint-config
 
+## 2.0.1
+
+### Patch Changes
+
+- Fix parser on vue config'
+
 ## 2.0.0
 
 ### Major Changes
