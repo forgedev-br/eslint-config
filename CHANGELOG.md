@@ -1,5 +1,17 @@
 # @forgedev-br/eslint-config
 
+## 2.0.0
+
+### Major Changes
+
+- New configs for react and vue with vite
+
+  - **Refactor of `base.js`**: The base configuration has been extensively refactored to improve maintainability and performance.
+  - **Refactor of `vue.js`**: The Vue.js configuration has been updated to align with the latest best practices and standards.
+  - **Renaming of `vite.js` to `react.js`**: The `vite.js` configuration file has been renamed to `react.js` to better reflect its purpose and contents, focusing on React-specific configurations.
+
+  These changes aim to provide a more robust and clear configuration setup for React and Vue projects.
+
 ## 1.4.1
 
 ### Patch Changes
