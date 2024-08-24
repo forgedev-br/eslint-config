@@ -8,7 +8,7 @@ module.exports = {
     '@vue/eslint-config-typescript',
     '@vue/eslint-config-prettier/skip-formatting',
   ],
-  parser: '@typescript-eslint/parser',
+  parser: 'vue-eslint-parser',
   overrides: [
     {
       files: [
@@ -25,6 +25,7 @@ module.exports = {
     {
       files: ['src/**/*.vue'],
       rules: {
+        'import/no-default-export': 'off',
         'unicorn/filename-case': ['error', { case: 'pascalCase' }],
       },
     },
