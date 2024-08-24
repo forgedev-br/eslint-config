@@ -1,5 +1,11 @@
 # @forgedev-br/eslint-config
 
+## 1.4.1
+
+### Patch Changes
+
+- Update readme with vue config
+
 ## 1.4.0
 
 ### Minor Changes
