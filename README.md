@@ -1,10 +1,9 @@
-# ESLint configuration used by ForgeDev BR
+# ESLint configuration used by ForgeDev BR Team
 
 ## Whats included?
 
+- Support for Node.js, Next.js and Vue;
 - Standard config base;
-- React plugin;
-- React Hooks plugin;
 - JSX a11y plugin;
 - Prettier;
 - Eslint;
@@ -45,5 +44,14 @@ Inside `.eslintrc.js`
 ```sh
 {
   extends: '@forgedev-br/eslint-config/vite'
+}
+```
+
+### Vite (with Vue)
+
+Inside `.eslintrc.js`
+```sh
+{
+  extends: '@forgedev-br/eslint-config/vue'
 }
 ```
