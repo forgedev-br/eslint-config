@@ -25,20 +25,24 @@ module.exports = {
       files: ['src/**/*.vue'],
       rules: {
         'import/no-default-export': 'off',
-        'unicorn/filename-case': ['error', { case: 'pascalCase' }],
-        'vue/html-self-closing': 'off',
-        'vue/max-attributes-per-line': [
+        'unicorn/filename-case': 'off',
+        'vue/singleline-html-element-content-newline': 'off',
+        'vue/multiline-html-element-content-newline': 'off',
+        'vue/html-self-closing': [
           'error',
           {
-            singleline: {
-              max: 3,
-            },
-            multiline: {
-              max: 1,
+            html: {
+              void: 'always',
             },
           },
         ],
-        'vue/singleline-html-element-content-newline': 'off',
+        'vue/max-attributes-per-line': [
+          'error',
+          {
+            singleline: 1,
+            multiline: 1,
+          },
+        ],
       },
     },
   ],

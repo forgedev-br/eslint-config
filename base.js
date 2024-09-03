@@ -1,7 +1,13 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
-  extends: ['standard', 'eslint:recommended', 'plugin:import/recommended', 'plugin:import/typescript', 'prettier'],
+  extends: [
+    'standard',
+    'eslint:recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+    'plugin:prettier/recommended',
+  ],
   env: {
     es2022: true,
   },
@@ -33,6 +39,7 @@ module.exports = {
         arrowParens: 'always',
         trailingComma: 'all',
         endOfLine: 'auto',
+        singleAttributePerLine: true,
         tailwindFunctions: ['tv', 'cn', 'cva'],
         plugins: ['prettier-plugin-tailwindcss'],
       },
