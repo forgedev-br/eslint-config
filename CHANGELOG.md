@@ -1,5 +1,11 @@
 # @forgedev-br/eslint-config
 
+## 2.0.4
+
+### Patch Changes
+
+- Update vue rules to not conflict with prettier
+
 ## 2.0.3
 
 ### Patch Changes
